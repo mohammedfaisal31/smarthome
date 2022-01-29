@@ -1,0 +1,56 @@
+body {
+    background-image: url("../images/bg-blurred.jpg")
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh
+}
+
+.card {
+    width: 400px;
+    background-color: black;
+    opacity: 0.91;
+}
+
+.dots {
+    display: flex;
+    flex-direction: row
+}
+
+.dots span {
+    display: flex;
+    margin-right: 2px;
+    height: 5px;
+    width: 5px;
+    background-color: #000;
+    border-radius: 50%
+}
+
+.h-45 {
+    height: 45px;
+    width: 10px;
+    font-size: 14px
+}
+
+.container{
+    color: blanchedalmond;
+}
+.toggle-text{
+    margin-top: 10px;
+}
+
+h2{
+    text-align: center;
+}
+
+table{
+    text-align: center;
+}
+
+.w-100{
+    background-color: transparent;
+    border-color: transparent;
+}

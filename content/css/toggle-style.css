@@ -1,0 +1,62 @@
+
+
+input[type="checkbox"] {
+  position: realtive;
+  width: 100px;
+  height: 45px;
+  background: #ee2e41;
+  -webkit-appearance: none;
+  border-radius: 20px;
+  outline: none;
+  transition: .4s;
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+input:checked[type="checkbox"] {
+  background: #06aa8f;
+}
+
+input[type="checkbox"]::before {
+  z-index: 2;
+  position: absolute;
+  content: "";
+  left: 0;
+  width: 40px;
+  height: 40px;
+  background: #fff;
+  border-radius: 50%;
+  transform: scale(1.1);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: .4s;
+}
+
+input:checked[type="checkbox"]::before {
+  left: 60px;
+}
+
+.toggle {
+  position: relative;
+  display: inline;
+}
+
+label {
+  position: absolute;
+  color: #fff;
+  font-weight: 600;
+  font-size: 20px;
+  pointer-events: none;
+}
+
+.onbtn {
+  bottom: 15px;
+  left: 15px;
+}
+
+.ofbtn {
+  bottom: 15px;
+  right: 14px;
+  color: #fefeff;
+}
+
+/*# sourceMappingURL=sass-autocompile.output.a30edd3f-1caa-4134-8ed9-b63cb5275866.css.map */
