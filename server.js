@@ -48,15 +48,12 @@ app.post('/control',urlencodedParser,(req,res)=>{
 })
 
 app.get('/api/switch',(req,res)=>{
-    if(ifNodeClient)
-        res.send(turn_on)
-    else 
-        res.sendStatus(400)
+    res.send(turn_on)    
 })
 
 app.post('/api/switch',urlencodedParser,(req,res)=>{
-    ifNodeClient = (req.body == crypto.createHash('sha256').update("HelloIamNode").digest('hex'))
-         
+    res.sendStatus(404)
+    
 })
 
 app.listen(port,()=>console.log("Listen on "+port))
